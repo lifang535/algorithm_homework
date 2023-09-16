@@ -155,7 +155,6 @@ void Insert(T a[], int& n, const T& x)
   a[i+1] = x;
   n++; // 添加了一个元素
 }
-
 ```
 
 #### answer: 
