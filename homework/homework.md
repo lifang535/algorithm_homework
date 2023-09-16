@@ -136,9 +136,9 @@ int SequentialSearch(T a[ ], const T& x, int n)
   // 如果找到，则返回相应位置，否则返回 -1
   a[n] = x; // 假定该位置有效
   int i;
-  for (i = 0; a[i] != x; i++); # 看看书 for 循环是怎么算执行步数的
+  for (i = 0; a[i] != x; i++); // 看看书 for 循环是怎么算执行步数的
   if (i == n) return -1;
-  return i;
+  return i; // 看看书 return 是怎么算执行步数的
 }
 ```
 #### answer: 等可能的位置 i：0 ~ n - 1，执行步数：2 * (n - i)；未找到返回 -1，执行步数：2 * n + 1。
